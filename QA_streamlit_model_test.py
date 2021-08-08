@@ -5,6 +5,10 @@ Created on Sun Jul 18 15:27:12 2021
 @author: minli
 """
 
+"""
+This Streamlit app is for us as developer to quickly know which models give more reasonable answer outputs.
+"""
+
 import streamlit as st
 
 import pandas as pd
@@ -16,7 +20,7 @@ import string
 from tqdm.autonotebook import tqdm
 import numpy as np
 
-st.title("Information Searching in A Given Context Demo")
+st.title("Information Searching in A Given Defects Context Demo")
 
 # "C:/Users/LIUM3478/OneDrive Corp/OneDrive - Atkins Ltd/Work_Atkins/textanalys/data/close_defects_small.csv"
 embeddings_filepath = 'D:/python_working_dir/nlp/data/close_defects_small.csv'
