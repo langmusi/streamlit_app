@@ -26,7 +26,7 @@ with st.sidebar.header('1. Upload your CSV data'):
 if uploaded_file is not None:
     @st.cache
     def load_csv():
-        csv = pd.read_csv(uploaded_file, sep=";")
+        csv = pd.read_csv(uploaded_file, encoding = 'ISO 8859-1', sep = ";", decimal=",")
         return csv
     df = load_csv()
     st.write('The whole datasets:', df.shape)
